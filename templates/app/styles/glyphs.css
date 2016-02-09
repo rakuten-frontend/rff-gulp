@@ -1,0 +1,29 @@
+@font-face {
+	font-family: "glyphs";
+	src: url('../fonts/glyphs.eot');
+	src: url('../fonts/glyphs.eot?#iefix') format('eot'),
+		url('../fonts/glyphs.woff') format('woff'),
+		url('../fonts/glyphs.ttf') format('truetype'),
+		url('../fonts/glyphs.svg#glyphs') format('svg');
+}
+
+.glyph:before {
+	font-family: "glyphs";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.glyph-git:before {
+	content: "\E001";
+}
+
+.glyph-github:before {
+	content: "\E002";
+}

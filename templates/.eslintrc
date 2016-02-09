@@ -1,0 +1,9 @@
+{
+  "extends": "xo",
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "indent": [2, 2, {"SwitchCase": 1}]
+  }
+}
