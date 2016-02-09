@@ -150,11 +150,11 @@ gulp.task('images', ['sprites'], function () {
     'app/images/**',
     '!app/images/_*{,/**}'
   ])
-    .pipe($.cache($.imagemin({
+    .pipe($.imagemin({
       progressive: true,
       interlaced: true,
       svgoPlugins: [{cleanupIDs: false}]
-    })))
+    }))
     .pipe(gulp.dest('dist/images'));
 });
 
