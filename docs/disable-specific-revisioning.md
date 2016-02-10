@@ -5,7 +5,7 @@ Modify `gulp.src()` in the `filerev` task.
 
 **Example 1:** Apply only CSS/JS files
 
-```
+```diff
 gulp.task('filerev', function () {
 - return gulp.src('dist/**/*.{css,js,png,jpg,gif,eot,svg,ttf,woff,woff2}')
 + return gulp.src('dist/**/*.{css,js}')
@@ -15,7 +15,7 @@ gulp.task('filerev', function () {
 
 **Example 2:** Disable revisioning to images under `images/static` directory.
 
-```
+```diff
 gulp.task('filerev', function () {
 - return gulp.src('dist/**/*.{css,js,png,jpg,gif,eot,svg,ttf,woff,woff2}')
 + return gulp.src([
