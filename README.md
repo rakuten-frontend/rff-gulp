@@ -21,4 +21,4 @@
 
 ## License
 Copyright (c) 2016 Rakuten, Inc.
-Licensed under the MIT License.
+Licensed under the [MIT License](LICENSE).
