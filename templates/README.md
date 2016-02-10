@@ -1,23 +1,5 @@
-# Gulp Boilerplate
-> Boilerplate for gulp project.
-
-## Features
-- **Stylesheet**
-  - [Sass](http://sass-lang.com/)
-  - [Autoprefixer](https://github.com/postcss/autoprefixer)
-- **JavaScript**
-  - [ESLint](http://eslint.org/)
-  - [Browserify](http://browserify.org/)
-- **Web performance**
-  - HTML/CSS/JS minification
-  - Image optimization
-  - Static asset revisioning
-- **Automation**
-  - CSS Sprites generator
-  - Icon fonts generator
-  - Deployment to Git repository
-- **Development server**
-  - [Browsersync](https://www.browsersync.io/)
+# [Project name]
+> [Project description]
 
 ## Getting started
 Make sure to install [Node.js](https://nodejs.org/).
@@ -70,7 +52,3 @@ gulp-boilerplate/
 
 - **`npm run deploy`**  
   Deploy production files to `gh-pages` branch.
-
-## License
-Copyright (c) 2015-2016 Hiroyuki Tanjo.
-Licensed under the [MIT License](LICENSE).
