@@ -1,6 +1,0 @@
-{
-  "extends": "xo-space/browser",
-  "env": {
-    "commonjs": true
-  }
-}

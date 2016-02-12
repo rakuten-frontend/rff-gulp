@@ -44,5 +44,11 @@
   },
   "dependencies": {
     "jquery": "^2.1.4"
+  },
+  "eslintConfig": {
+    "extends": "xo-space/browser",
+    "env": {
+      "commonjs": true
+    }
   }
 }
