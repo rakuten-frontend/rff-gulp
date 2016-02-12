@@ -2,7 +2,7 @@
 
 **Note:**  
 We do **not recommend** disabling CSS/JS minification in terms of the web performance.  
-If you want to debug the production code, use sourcemap instead.
+If you want to debug the production code, [use sourcemaps](sourcemaps.md) instead.
 
 ## CSS
 Remove `$.minifyCss()` pipe from the `styles` task.
@@ -49,3 +49,6 @@ If you want to remove this feature permanently, uninstall `gulp-uglify` from you
 ```sh
 $ npm uninstall gulp-uglify --save-dev
 ```
+
+## See also
+- [Output sourcemap for production files](sourcemaps.md)
