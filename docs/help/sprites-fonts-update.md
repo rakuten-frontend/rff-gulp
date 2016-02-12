@@ -13,8 +13,11 @@ $ touch app/fonts/_glyphs/your-new-icon.svg
 # Regenerate fonts and css
 ```
 
-**Other solution:** Always force to generate sprites/fonts  
-Are you sure? OK, remove `$.newer()` pipes and uninstall `gulp-newer` from your project.
+---
+
+**Other solution:**  
+Not recommended, but you can force to generate sprites/fonts always by stripping gulp-newer.  
+Remove `$.newer()` pipes and uninstall `gulp-newer` from your project.
 
 ```diff
 gulp.task('sprites', function () {
