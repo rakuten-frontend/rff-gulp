@@ -12,3 +12,6 @@
 - [Disable CSS/JS minification](help/disable-css-js-minification.md)
 - [Disable asset revisioning](help/disable-revisioning.md)
 - [Disable asset revisioning to specific files](help/disable-specific-revisioning.md)
+
+## Troubleshooting
+- [Sprites/fonts can't be updated](help/sprites-fonts-update.md)
