@@ -1,7 +1,7 @@
 # Task "styles" is too slow
 
 When you have huge stylesheets, CSS minification would be slow, especially [postcss-discard-duplicates](https://github.com/ben-eb/postcss-discard-duplicates) plugin has large performance hit.  
-Set `discardDuplicates: false` to improve the performance.
+Set `discardDuplicates: false` to improve the task speed.
 But this decreases the compressibility.
 
 ```diff
