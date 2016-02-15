@@ -15,3 +15,4 @@
 
 ## Troubleshooting
 - [Sprites/fonts can't be updated](help/sprites-fonts-update.md)
+- [Task "styles" is too slow](help/styles-performance.md)
