@@ -5,16 +5,20 @@ By default, this framework outputs sourcemaps for development, but it doesn't fo
 If you want to debug production CSS/JavaScript, modify tasks to generate sourcemaps to "dist" folder.
 
 ## CSS
-In the `styles` task, pass `{sourceMap: true}` to minifyCss and add `$.sourcemaps()` pipes.
+In the `styles` task, add `$.sourcemaps()` pipes.
 
 ```diff
 gulp.task('styles', ['sprites', 'fonts'], function () {
   return gulp.src('app/styles/**/*.scss')
 +   .pipe($.sourcemaps.init({loadMaps: true}))
     .pipe($.sass().on('error', $.sass.logError))
-    .pipe($.autoprefixer({browsers: browsers}))
--   .pipe($.minifyCss({sourceMap: false}))
-+   .pipe($.minifyCss({sourceMap: true}))
+    .pipe($.postcss([
+      autoprefixer({browsers: browsers}),
+      cssnano({
+        safe: true,
+        autoprefixer: false
+      })
+    ]))
 +   .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest('dist/styles'));
 });

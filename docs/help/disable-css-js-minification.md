@@ -5,23 +5,33 @@ We do **not recommend** disabling CSS/JS minification in terms of the web perfor
 If you want to debug the production code, [use sourcemaps](sourcemaps.md) instead.
 
 ## CSS
-Remove `$.minifyCss()` pipe from the `styles` task.
+Remove `cssnano()` from the `styles` task.
 
 ```diff
 gulp.task('styles', ['sprites', 'fonts'], function () {
   return gulp.src('app/styles/**/*.scss')
     .pipe($.sass().on('error', $.sass.logError))
-    .pipe($.autoprefixer({browsers: browsers}))
--   .pipe($.minifyCss({sourceMap: false}))
+    .pipe($.postcss([
+-     autoprefixer({browsers: browsers}),
++     autoprefixer({browsers: browsers})
+-     cssnano({
+-       safe: true,
+-       autoprefixer: false
+-     })
+    ]))
     .pipe(gulp.dest('dist/styles'));
 });
 ```
 
 **Optional:**  
-If you want to remove this feature permanently, uninstall `gulp-minify-css` from your project.
+If you want to remove this feature permanently, uninstall `cssnano` from your project.
+
+```diff
+- var cssnano = require('cssnano');
+```
 
 ```sh
-$ npm uninstall gulp-minify-css --save-dev
+$ npm uninstall cssnano --save-dev
 ```
 
 ## JavaScript
