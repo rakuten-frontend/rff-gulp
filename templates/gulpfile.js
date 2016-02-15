@@ -11,6 +11,8 @@ var path = require('path');
 var runSequence = require('run-sequence');
 var browserify = require('browserify');
 var watchify = require('watchify');
+var autoprefixer = require('autoprefixer');
+var cssnano = require('cssnano');
 var bs = require('browser-sync').create();
 var del = require('del');
 
@@ -36,7 +38,9 @@ gulp.task('styles:dev', ['sprites', 'fonts'], function () {
   return gulp.src('app/styles/**/*.scss')
     .pipe($.sourcemaps.init({loadMaps: true}))
     .pipe($.sass().on('error', $.sass.logError))
-    .pipe($.autoprefixer({browsers: browsers}))
+    .pipe($.postcss([
+      autoprefixer({browsers: browsers})
+    ]))
     .pipe($.sourcemaps.write('.'))
     .pipe(gulp.dest('.tmp/styles'));
 });
@@ -45,8 +49,13 @@ gulp.task('styles:dev', ['sprites', 'fonts'], function () {
 gulp.task('styles', ['sprites', 'fonts'], function () {
   return gulp.src('app/styles/**/*.scss')
     .pipe($.sass().on('error', $.sass.logError))
-    .pipe($.autoprefixer({browsers: browsers}))
-    .pipe($.minifyCss({sourceMap: false}))
+    .pipe($.postcss([
+      autoprefixer({browsers: browsers}),
+      cssnano({
+        safe: true,
+        autoprefixer: false
+      })
+    ]))
     .pipe(gulp.dest('dist/styles'));
 });
 
