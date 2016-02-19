@@ -1,5 +1,4 @@
 # [Project name]
-> [Project description]
 
 ## Getting started
 Make sure to install [Node.js](https://nodejs.org/).
