@@ -1,6 +1,13 @@
 {
   "name": "rff-gulp",
   "version": "0.0.0",
+  "description": "Boilerplate for gulp project.",
+  "author": "Rakuten, Inc.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rakuten-frontend/rff-gulp.git"
+  },
   "devDependencies": {
     "del": "^2.2.0",
     "gulp": "^3.9.1",
