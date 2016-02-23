@@ -1,7 +1,7 @@
 # [Project name]
 
 ## Getting started
-Make sure to install [Node.js](https://nodejs.org/).
+Make sure to install [Node.js](https://nodejs.org/) ver 4 or later.
 
 ### Install dependencies
 ```sh
@@ -20,7 +20,7 @@ When you save a source code, it will be compiled and reload browser automaticall
 
 ## Structure
 ```
-gulp-boilerplate/
+[project]/
 ├── app/                 : Application files
 │   ├── styles/          : Stylesheets
 │   ├── scripts/         : Scripts
@@ -52,6 +52,9 @@ gulp-boilerplate/
 - **`npm run deploy`**  
   Deploy production files to `gh-pages` branch.
 
+## Help
+See [rff-gulp documents](https://github.com/rakuten-frontend/rff-gulp/tree/master/docs).
+
 ---
 
-This project is created based on [<%= pkg.name %>](<%= pkg.homepage %>) v<%= pkg.version %>.
+This project is created based on [rff-gulp](https://github.com/rakuten-frontend/rff-gulp) v<%= pkg.version %>.
