@@ -51,3 +51,7 @@ gulp-boilerplate/
 
 - **`npm run deploy`**  
   Deploy production files to `gh-pages` branch.
+
+---
+
+This project is created based on [<%= pkg.name %>](<%= pkg.homepage %>) v<%= pkg.version %>.
