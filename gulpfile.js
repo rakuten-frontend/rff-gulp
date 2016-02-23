@@ -10,11 +10,12 @@ var fs = require('fs');
 var config = require('config');
 
 var pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
+var pkgName = pkg.name + '-v' + pkg.version;
 var github = new GitHubApi();
 
 gulp.task('clean', del.bind(null, 'dist'));
 
-gulp.task('build', ['clean'], function () {
+gulp.task('build', function () {
   var filter = $.filter('README.md', {restore: true});
   return gulp.src([
     'templates/*',
@@ -28,7 +29,11 @@ gulp.task('build', ['clean'], function () {
     .pipe(filter)
     .pipe($.ejs({pkg: pkg}))
     .pipe(filter.restore)
-    .pipe($.zip(pkg.name + '.zip'))
+    .pipe($.rename(function (path) {
+      path.dirname = pkgName + '/' + path.dirname;
+    }))
+    .pipe(require('gulp-debug')())
+    .pipe($.zip(pkgName + '.zip'))
     .pipe(gulp.dest('dist'));
 });
 
@@ -50,8 +55,8 @@ gulp.task('release', ['build'], function () {
         user: repo.user,
         repo: repo.project,
         id: id,
-        name: pkg.name + '-v' + pkg.version + '.zip',
-        filePath: 'dist/' + pkg.name + '.zip'
+        name: pkgName + '.zip',
+        filePath: 'dist/' + pkgName + '.zip'
       })
     })
     .then(function (res) {
