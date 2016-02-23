@@ -10,7 +10,7 @@ gulp.task('zip', function () {
     'templates/*',
     'templates/app/**',
     '!**/.DS_Store'
-  ], {dot: true})
+  ], {base: 'templates', dot: true})
   .pipe($.ignore.include({isFile: true}))
     .pipe($.zip('archive.zip'))
     .pipe(gulp.dest('dist'));
