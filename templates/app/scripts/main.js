@@ -3,5 +3,5 @@
 var $ = require('jquery');
 
 $(function () {
-  console.log('Hello!');
+  console.log('Welcome!');
 });
