@@ -148,7 +148,22 @@ gulp.task('scripts', function () {
 gulp.task('html', function () {
   return gulp.src('app/**/*.html')
     .pipe($.htmlmin({
-      collapseWhitespace: true
+      collapseBooleanAttributes: true,
+      collapseWhitespace: true,
+      conservativeCollapse: true,
+      minifyCSS: true,
+      minifyJS: true,
+      preventAttributesEscaping: true,
+      removeAttributeQuotes: true,
+      removeComments: true,
+      removeCommentsFromCDATA: true,
+      removeEmptyAttributes: true,
+      removeOptionalTags: true,
+      removeRedundantAttributes: true,
+      removeScriptTypeAttributes: true,
+      removeStyleLinkTypeAttributes: true,
+      removeTagWhitespace: true,
+      useShortDoctype: true
     }))
     .pipe(gulp.dest('dist'));
 });
