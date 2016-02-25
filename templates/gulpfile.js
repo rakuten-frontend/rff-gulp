@@ -37,7 +37,7 @@ gulp.task('lint', function () {
 gulp.task('styles:dev', ['sprites', 'fonts'], function () {
   return gulp.src('app/styles/**/*.scss')
     .pipe($.sourcemaps.init({loadMaps: true}))
-    .pipe($.sass().on('error', $.sass.logError))
+    .pipe($.sass({outputStyle: 'expanded'}).on('error', $.sass.logError))
     .pipe($.postcss([
       autoprefixer({browsers: browsers})
     ]))
@@ -48,7 +48,7 @@ gulp.task('styles:dev', ['sprites', 'fonts'], function () {
 // Build stylesheets for production
 gulp.task('styles', ['sprites', 'fonts'], function () {
   return gulp.src('app/styles/**/*.scss')
-    .pipe($.sass().on('error', $.sass.logError))
+    .pipe($.sass({outputStyle: 'expanded'}).on('error', $.sass.logError))
     .pipe($.postcss([
       autoprefixer({browsers: browsers}),
       cssnano({
