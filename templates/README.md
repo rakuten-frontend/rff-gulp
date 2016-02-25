@@ -1,7 +1,7 @@
 # [Project name]
 
 ## Getting started
-Make sure to install [Node.js](https://nodejs.org/) ver 4 or later.
+Make sure to install [Node.js](https://nodejs.org/) (and npm) beforehand.
 
 ### Install dependencies
 ```sh
@@ -30,8 +30,7 @@ When you save a source code, it will be compiled and reload browser automaticall
 │   │   └── _glyphs/     : Base SVG files for icon font
 │   └── index.html       : Index page
 ├── dist/                : Production files (Not tracked in Git)
-├── tasks/               : Additional gulp tasks
-├── gulpfile.js          : Base gulp config
+├── gulpfile.js          : Build config
 └── package.json         : Package information including dependencies
 ```
 
@@ -51,6 +50,9 @@ When you save a source code, it will be compiled and reload browser automaticall
 
 - **`npm run deploy`**  
   Deploy production files to `gh-pages` branch.
+
+- **`npm run gulp <task>`**  
+  Run individual gulp task.
 
 ## Help
 See [rff-gulp documents](https://github.com/rakuten-frontend/rff-gulp/tree/master/docs).

@@ -8,7 +8,8 @@
     "test": "gulp lint",
     "build": "gulp",
     "serve:dist": "gulp serve:dist",
-    "deploy": "gulp deploy"
+    "deploy": "gulp deploy",
+    "gulp": "gulp"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.3",
