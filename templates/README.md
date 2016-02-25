@@ -8,14 +8,14 @@ Make sure to install [Node.js](https://nodejs.org/) (and npm) beforehand.
 $ npm install
 ```
 
-This installs both build system modules and dependent libraries for the project.
+This command sets up the build system and downloads libraries used in this project.
 
 ### Start development
 ```sh
 $ npm start
 ```
 
-This starts local development server and "watch" tasks.  
+This starts local development server and begins file watching.  
 When you save a source code, it will be compiled and reload browser automatically.
 
 ## Structure
@@ -29,7 +29,7 @@ When you save a source code, it will be compiled and reload browser automaticall
 │   ├── fonts/           : Web fonts
 │   │   └── _glyphs/     : Base SVG files for icon font
 │   └── index.html       : Index page
-├── dist/                : Production files (Not tracked in Git)
+├── dist/                : Production files (Gitignored)
 ├── gulpfile.js          : Build config
 └── package.json         : Package information including dependencies
 ```
@@ -55,8 +55,5 @@ When you save a source code, it will be compiled and reload browser automaticall
   Run individual gulp task.
 
 ## Help
-See [rff-gulp documents](https://github.com/rakuten-frontend/rff-gulp/tree/master/docs).
-
----
-
-This project is created based on [rff-gulp](https://github.com/rakuten-frontend/rff-gulp) v<%= pkg.version %>.
+See [rff-gulp documents](https://github.com/rakuten-frontend/rff-gulp/tree/master/docs).  
+This project is created using [rff-gulp](https://github.com/rakuten-frontend/rff-gulp) v<%= pkg.version %>.
