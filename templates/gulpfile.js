@@ -88,7 +88,7 @@ gulp.task('fonts', function () {
     }))
     .pipe($.iconfont({
       fontName: 'glyphs',
-      appendUnicode: true,
+      prependUnicode: true,
       formats: ['eot', 'woff2', 'woff', 'ttf', 'svg']
     }))
     .pipe(gulp.dest('app/fonts'));
