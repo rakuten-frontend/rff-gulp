@@ -1,7 +1,7 @@
 {
   "name": "rff-gulp",
   "version": "0.0.0",
-  "description": "Boilerplate for gulp project.",
+  "description": "Boilerplate for gulp-based project.",
   "author": "Rakuten, Inc.",
   "license": "MIT",
   "repository": {
