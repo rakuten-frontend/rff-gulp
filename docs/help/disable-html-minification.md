@@ -6,7 +6,7 @@ Remove `$.htmlmin()` pipe from the `html` task.
 gulp.task('html', function () {
   return gulp.src('app/**/*.html')
 -   .pipe($.htmlmin({
--     collapseWhitespace: true
+-     ...
 -   }))
     .pipe(gulp.dest('dist'));
 });

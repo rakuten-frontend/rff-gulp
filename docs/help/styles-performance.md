@@ -7,7 +7,7 @@ But this decreases the compressibility.
 ```diff
 gulp.task('styles', ['sprites', 'fonts'], function () {
   return gulp.src('app/styles/**/*.scss')
-    .pipe($.sass().on('error', $.sass.logError))
+    .pipe($.sass({outputStyle: 'expanded'}).on('error', $.sass.logError))
     .pipe($.postcss([
       autoprefixer({browsers: browsers}),
       cssnano({

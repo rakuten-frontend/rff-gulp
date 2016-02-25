@@ -11,7 +11,7 @@ In the `styles` task, add `$.sourcemaps()` pipes.
 gulp.task('styles', ['sprites', 'fonts'], function () {
   return gulp.src('app/styles/**/*.scss')
 +   .pipe($.sourcemaps.init({loadMaps: true}))
-    .pipe($.sass().on('error', $.sass.logError))
+    .pipe($.sass({outputStyle: 'expanded'}).on('error', $.sass.logError))
     .pipe($.postcss([
       autoprefixer({browsers: browsers}),
       cssnano({
