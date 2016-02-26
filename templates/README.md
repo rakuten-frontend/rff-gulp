@@ -21,9 +21,9 @@ When you save a source code, it will be compiled and reload browser automaticall
 ## Structure
 ```
 [project]/
-├── app/                 : Application files
+├── app/                 : Application source files
 │   ├── styles/          : Stylesheets
-│   ├── scripts/         : Scripts
+│   ├── scripts/         : JavaScripts
 │   ├── images/          : Images
 │   │   └── _sprites/    : Base images for spritesheet
 │   ├── fonts/           : Web fonts
@@ -31,7 +31,7 @@ When you save a source code, it will be compiled and reload browser automaticall
 │   └── index.html       : Index page
 ├── dist/                : Production files (Gitignored)
 ├── gulpfile.js          : Build config
-└── package.json         : Package information including dependencies
+└── package.json         : Package information
 ```
 
 ## Build tasks
