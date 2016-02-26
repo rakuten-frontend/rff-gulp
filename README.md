@@ -3,6 +3,7 @@
 
 [![GitHub Release][release-image]][release-url]
 [![GitHub Downloads][downloads-image]][downloads-url]
+[![devDependency Status][david-dev-image]][david-dev-url]
 
 ## Features
 - **Stylesheet**
@@ -47,3 +48,5 @@ Licensed under the [MIT License](LICENSE).
 [release-url]: https://github.com/rakuten-frontend/rff-gulp/releases/latest
 [downloads-image]: https://img.shields.io/github/downloads/rakuten-frontend/rff-gulp/total.svg
 [downloads-url]: https://github.com/rakuten-frontend/rff-gulp/releases
+[david-dev-image]: https://david-dm.org/rakuten-frontend/rff-gulp/dev-status.svg?path=templates
+[david-dev-url]: https://david-dm.org/rakuten-frontend/rff-gulp?path=templates#info=devDependencies
