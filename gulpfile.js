@@ -39,12 +39,15 @@ gulp.task('build', function () {
 
 gulp.task('release', ['build'], function () {
   var repo = hostedGitInfo.fromUrl(pkg.repository.url);
+  var releaseNote =
+    'Download **' + pkgName + '.zip** or use [generator-rff-gulp](https://github.com/rakuten-frontend/generator-rff-gulp).\n' +
+    'See [CHANGELOG.md](https://github.com/' + repo.path() + '/blob/master/CHANGELOG.md) for all release notes.';
   github.authenticate(config.auth);
   return pify(github.repos.createRelease)({
       user: repo.user,
       repo: repo.project,
       tag_name: 'v' + pkg.version,
-      body: 'Release v' + pkg.version
+      body: releaseNote
     })
     .then(function (res) {
       $.util.log($.util.colors.green('Release "' + res.tag_name + '" created'));
