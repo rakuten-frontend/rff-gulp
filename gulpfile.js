@@ -13,9 +13,19 @@ var pkg = JSON.parse(fs.readFileSync('package.json', 'utf8'));
 var pkgName = pkg.name + '-v' + pkg.version;
 var github = new GitHubApi();
 
+gulp.task('lint', function () {
+  return gulp.src([
+    '*.js',
+    'templates/*.js'
+  ])
+    .pipe($.eslint())
+    .pipe($.eslint.format())
+    .pipe($.eslint.failAfterError());
+});
+
 gulp.task('clean', del.bind(null, 'dist'));
 
-gulp.task('build', function () {
+gulp.task('build', ['lint'], function () {
   var filter = $.filter('README.md', {restore: true});
   return gulp.src([
     'templates/*',
@@ -44,11 +54,11 @@ gulp.task('release', ['build'], function () {
     'See [CHANGELOG.md](https://github.com/' + repo.path() + '/blob/master/CHANGELOG.md) for all release notes.';
   github.authenticate(config.auth);
   return pify(github.repos.createRelease)({
-      user: repo.user,
-      repo: repo.project,
-      tag_name: 'v' + pkg.version,
-      body: releaseNote
-    })
+    user: repo.user,
+    repo: repo.project,
+    tag_name: 'v' + pkg.version,    // eslint-disable-line camelcase
+    body: releaseNote
+  })
     .then(function (res) {
       $.util.log($.util.colors.green('Release "' + res.tag_name + '" created'));
       return res.id;
@@ -60,7 +70,7 @@ gulp.task('release', ['build'], function () {
         id: id,
         name: pkgName + '.zip',
         filePath: 'dist/' + pkgName + '.zip'
-      })
+      });
     })
     .then(function (res) {
       $.util.log($.util.colors.green('Asset "' + res.name + '" uploaded'));
