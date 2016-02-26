@@ -1,6 +1,9 @@
 # rff-gulp
 > Boilerplate for gulp-based project.
 
+[![GitHub Release][release-image]][release-url]
+[![GitHub Downloads][downloads-image]][downloads-url]
+
 ## Features
 - **Stylesheet**
   - [Sass](http://sass-lang.com/)
@@ -39,3 +42,8 @@ See [rff-gulp documents](docs/README.md).
 ## License
 Copyright (c) 2016 Rakuten, Inc.
 Licensed under the [MIT License](LICENSE).
+
+[release-image]: https://img.shields.io/github/release/rakuten-frontend/rff-gulp.svg
+[release-url]: https://github.com/rakuten-frontend/rff-gulp/releases/latest
+[downloads-image]: https://img.shields.io/github/downloads/rakuten-frontend/rff-gulp/total.svg
+[downloads-url]: https://github.com/rakuten-frontend/rff-gulp/releases
