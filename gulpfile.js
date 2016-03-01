@@ -42,7 +42,6 @@ gulp.task('build', ['lint'], function () {
     .pipe($.rename(function (path) {
       path.dirname = pkgName + '/' + path.dirname;
     }))
-    .pipe(require('gulp-debug')())
     .pipe($.zip(pkgName + '.zip'))
     .pipe(gulp.dest('dist'));
 });
