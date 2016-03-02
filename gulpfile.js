@@ -16,11 +16,27 @@ var github = new GitHubApi();
 gulp.task('lint', function () {
   return gulp.src([
     '*.js',
+    'test/*.js',
     'templates/*.js'
   ])
     .pipe($.eslint())
     .pipe($.eslint.format())
     .pipe($.eslint.failAfterError());
+});
+
+gulp.task('pre-test', function () {
+  return gulp.src('templates/gulpfile.js')
+    .pipe($.istanbul())
+    .pipe($.istanbul.hookRequire());
+});
+
+gulp.task('test', ['pre-test'], function () {
+  return gulp.src('test/*.js')
+    .pipe($.mocha({
+      reporter: 'spec',
+      timeout: 10000
+    }))
+    .pipe($.istanbul.writeReports());
 });
 
 gulp.task('clean', del.bind(null, 'dist'));

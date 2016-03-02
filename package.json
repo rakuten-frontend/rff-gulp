@@ -18,12 +18,16 @@
     "gulp-eslint": "^2.0.0",
     "gulp-filter": "^3.0.1",
     "gulp-ignore": "^2.0.1",
+    "gulp-istanbul": "^0.10.3",
     "gulp-load-plugins": "^1.2.0",
+    "gulp-mocha": "^2.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-util": "^3.0.7",
     "gulp-zip": "^3.2.0",
     "hosted-git-info": "^2.1.4",
-    "pify": "^2.3.0"
+    "pify": "^2.3.0",
+    "rewire": "^2.5.1",
+    "run-sequence": "^1.1.5"
   },
   "eslintConfig": {
     "extends": "xo-space"
