@@ -24,19 +24,13 @@ gulp.task('lint', function () {
     .pipe($.eslint.failAfterError());
 });
 
-gulp.task('pre-test', function () {
-  return gulp.src('templates/gulpfile.js')
-    .pipe($.istanbul())
-    .pipe($.istanbul.hookRequire());
-});
-
-gulp.task('unit-test', ['pre-test'], function () {
+gulp.task('unit-test', function () {
   return gulp.src('test/*.js')
-    .pipe($.mocha({
+    .pipe($.spawnMocha({
       reporter: 'spec',
-      timeout: 10000
-    }))
-    .pipe($.istanbul.writeReports());
+      timeout: 10000,
+      istanbul: true
+    }));
 });
 
 gulp.task('coveralls', ['unit-test'], function () {
