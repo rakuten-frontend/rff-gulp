@@ -30,7 +30,7 @@ gulp.task('pre-test', function () {
     .pipe($.istanbul.hookRequire());
 });
 
-gulp.task('test', ['pre-test'], function () {
+gulp.task('test', ['lint', 'pre-test'], function () {
   return gulp.src('test/*.js')
     .pipe($.mocha({
       reporter: 'spec',
@@ -41,7 +41,7 @@ gulp.task('test', ['pre-test'], function () {
 
 gulp.task('clean', del.bind(null, 'dist'));
 
-gulp.task('build', ['lint'], function () {
+gulp.task('build', ['test'], function () {
   var filter = $.filter('README.md', {restore: true});
   return gulp.src([
     'templates/*',

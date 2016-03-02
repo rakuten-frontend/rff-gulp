@@ -8,6 +8,10 @@
     "type": "git",
     "url": "https://github.com/rakuten-frontend/rff-gulp.git"
   },
+  "scripts": {
+    "test": "gulp test",
+    "postinstall": "npm install --prefix templates"
+  },
   "devDependencies": {
     "config": "^1.19.0",
     "del": "^2.2.0",
