@@ -30,7 +30,7 @@ gulp.task('pre-test', function () {
     .pipe($.istanbul.hookRequire());
 });
 
-gulp.task('test', ['lint', 'pre-test'], function () {
+gulp.task('unit-test', ['pre-test'], function () {
   return gulp.src('test/*.js')
     .pipe($.mocha({
       reporter: 'spec',
@@ -38,6 +38,16 @@ gulp.task('test', ['lint', 'pre-test'], function () {
     }))
     .pipe($.istanbul.writeReports());
 });
+
+gulp.task('coveralls', ['unit-test'], function () {
+  if (!process.env.CI) {
+    return;
+  }
+  return gulp.src('coverage/lcov.info')
+    .pipe($.coveralls());
+});
+
+gulp.task('test', ['lint', 'unit-test', 'coveralls']);
 
 gulp.task('clean', del.bind(null, 'dist'));
 
