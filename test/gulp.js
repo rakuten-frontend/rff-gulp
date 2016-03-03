@@ -45,7 +45,7 @@ describe('gulp', function () {
       bs.exit();
     });
 
-    it('outputs css and js under ".tmp" directory', function () {
+    it('outputs css and js into ".tmp" directory', function () {
       assert.file([
         '../templates/.tmp/styles/main.css',
         '../templates/.tmp/scripts/main.js'
@@ -81,7 +81,7 @@ describe('gulp', function () {
       });
     });
 
-    it('outputs files under "dist" directory', function () {
+    it('outputs files into "dist" directory', function () {
       assert.file([
         '../templates/dist/index.html',
         '../templates/dist/styles',
