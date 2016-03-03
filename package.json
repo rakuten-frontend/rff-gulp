@@ -30,8 +30,10 @@
     "gulp-zip": "^3.2.0",
     "hosted-git-info": "^2.1.4",
     "pify": "^2.3.0",
+    "request": "^2.69.0",
     "rewire": "^2.5.1",
-    "run-sequence": "^1.1.5"
+    "run-sequence": "^1.1.5",
+    "yeoman-assert": "^2.1.1"
   },
   "eslintConfig": {
     "extends": "xo-space"
