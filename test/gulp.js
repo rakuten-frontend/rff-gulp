@@ -47,8 +47,8 @@ describe('gulp', function () {
 
     it('outputs css and js into ".tmp" directory', function () {
       assert.file([
-        '../templates/.tmp/styles/main.css',
-        '../templates/.tmp/scripts/main.js'
+        '.tmp/styles/main.css',
+        '.tmp/scripts/main.js'
       ]);
     });
 
@@ -83,11 +83,11 @@ describe('gulp', function () {
 
     it('outputs files into "dist" directory', function () {
       assert.file([
-        '../templates/dist/index.html',
-        '../templates/dist/styles',
-        '../templates/dist/scripts',
-        '../templates/dist/images',
-        '../templates/dist/fonts'
+        'dist/index.html',
+        'dist/styles',
+        'dist/scripts',
+        'dist/images',
+        'dist/fonts'
       ]);
     });
   });
