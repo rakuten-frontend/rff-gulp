@@ -46,7 +46,7 @@ gulp.task('test', ['lint', 'unit-test', 'coveralls']);
 gulp.task('clean', del.bind(null, 'dist'));
 
 gulp.task('build', ['test'], function () {
-  var filter = $.filter('README.md', {restore: true});
+  var filter = $.filter('templates/README.md', {restore: true});
   return gulp.src([
     'templates/*',
     'templates/app/**',
