@@ -59,7 +59,8 @@ describe('gulp', function () {
         bs.emitter.on('init', testRequest);
       }
       function testRequest() {
-        request('http://localhost:3000/', function (err, res) {
+        var url = bs.getOption('urls').get('local');
+        request(url, function (err, res) {
           if (err) {
             throw err;
           }
@@ -113,7 +114,8 @@ describe('gulp', function () {
         bs.emitter.on('init', testRequest);
       }
       function testRequest() {
-        request('http://localhost:3000/', function (err, res) {
+        var url = bs.getOption('urls').get('local');
+        request(url, function (err, res) {
           if (err) {
             throw err;
           }
