@@ -10,7 +10,7 @@
   },
   "scripts": {
     "test": "gulp test",
-    "postinstall": "npm install --prefix templates"
+    "postinstall": "cd templates && npm install"
   },
   "devDependencies": {
     "config": "^1.19.0",

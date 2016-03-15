@@ -28,7 +28,7 @@ gulp.task('unit-test', function () {
   return gulp.src('test/*.js')
     .pipe($.spawnMocha({
       reporter: 'spec',
-      timeout: 10000,
+      timeout: 20000,
       istanbul: true
     }));
 });
