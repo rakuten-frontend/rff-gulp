@@ -34,7 +34,7 @@ gulp.task('unit-test', function () {
 });
 
 gulp.task('coveralls', ['unit-test'], function () {
-  if (!process.env.CI) {
+  if (!process.env.TRAVIS) {
     return;
   }
   return gulp.src('coverage/lcov.info')
