@@ -4,6 +4,9 @@ environment:
     - nodejs_version: "5"
     - nodejs_version: "4"
     - nodejs_version: "0.12"
+cache:
+  - node_modules -> package.json
+  - templates\node_modules -> templates\package.json
 install:
   - ps: Install-Product node $env:nodejs_version
   - node --version
