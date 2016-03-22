@@ -180,8 +180,9 @@ gulp.task('html', function () {
 gulp.task('images', ['sprites'], function () {
   return gulp.src([
     'app/images/**',
-    '!app/images/_*{,/**}'
+    '!app/images/_*/**'
   ])
+    .pipe($.ignore.include({isFile: true}))
     .pipe($.imagemin({
       progressive: true,
       interlaced: true,
@@ -191,14 +192,15 @@ gulp.task('images', ['sprites'], function () {
 });
 
 // Copy all extra files like favicon, .htaccess
-gulp.task('extras', function () {
+gulp.task('extras', ['sprites', 'fonts'], function () {
   return gulp.src([
     'app/**',
     '.tmp/{images,fonts}/*',
     '!app/{styles,scripts,images}/**',
-    '!app/fonts/_*{,/**}',
+    '!app/fonts/_*/**',
     '!**/{*.html,.DS_Store}'
   ], {dot: true})
+    .pipe($.ignore.include({isFile: true}))
     .pipe(gulp.dest('dist'));
 });
 
