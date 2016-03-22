@@ -180,6 +180,7 @@ gulp.task('html', function () {
 gulp.task('images', ['sprites'], function () {
   return gulp.src([
     'app/images/**',
+    '.tmp/images/**',
     '!app/images/_*/**'
   ])
     .pipe($.ignore.include({isFile: true}))
@@ -192,10 +193,10 @@ gulp.task('images', ['sprites'], function () {
 });
 
 // Copy all extra files like favicon, .htaccess
-gulp.task('extras', ['sprites', 'fonts'], function () {
+gulp.task('extras', ['fonts'], function () {
   return gulp.src([
     'app/**',
-    '.tmp/{images,fonts}/*',
+    '.tmp/fonts/**',
     '!app/{styles,scripts,images}/**',
     '!app/fonts/_*/**',
     '!**/{*.html,.DS_Store}'
