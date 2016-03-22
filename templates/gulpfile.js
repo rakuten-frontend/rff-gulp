@@ -37,7 +37,11 @@ gulp.task('lint', function () {
 gulp.task('styles:dev', ['sprites', 'fonts'], function () {
   return gulp.src('app/styles/**/*.scss')
     .pipe($.sourcemaps.init({loadMaps: true}))
-    .pipe($.sass({outputStyle: 'expanded'}).on('error', $.sass.logError))
+    .pipe($.sass({
+      outputStyle: 'expanded',
+      includePaths: ['.tmp/styles']
+    })
+    .on('error', $.sass.logError))
     .pipe($.postcss([
       autoprefixer({browsers: browsers})
     ]))
@@ -48,7 +52,11 @@ gulp.task('styles:dev', ['sprites', 'fonts'], function () {
 // Build stylesheets for production
 gulp.task('styles', ['sprites', 'fonts'], function () {
   return gulp.src('app/styles/**/*.scss')
-    .pipe($.sass({outputStyle: 'expanded'}).on('error', $.sass.logError))
+    .pipe($.sass({
+      outputStyle: 'expanded',
+      includePaths: ['.tmp/styles']
+    })
+    .on('error', $.sass.logError))
     .pipe($.postcss([
       autoprefixer({browsers: browsers}),
       cssnano({
@@ -62,7 +70,7 @@ gulp.task('styles', ['sprites', 'fonts'], function () {
 // Generate CSS sprites from PNG files
 gulp.task('sprites', function () {
   return gulp.src('app/images/_sprites/*.png')
-    .pipe($.newer('app/images/sprites.png'))
+    .pipe($.newer('.tmp/images/sprites.png'))
     .pipe($.spritesmith({
       imgName: 'images/sprites.png',
       cssName: 'styles/sprites.css',
@@ -73,13 +81,13 @@ gulp.task('sprites', function () {
         }
       }
     }))
-    .pipe(gulp.dest('app'));
+    .pipe(gulp.dest('.tmp'));
 });
 
 // Generate icon fonts from SVG files
 gulp.task('fonts', function () {
   return gulp.src('app/fonts/_glyphs/*.svg')
-    .pipe($.newer('app/styles/glyphs.css'))
+    .pipe($.newer('.tmp/styles/glyphs.css'))
     .pipe($.iconfontCss({
       fontName: 'glyphs',
       targetPath: '../styles/glyphs.css',   // Relative path from gulp.dest()
@@ -91,7 +99,7 @@ gulp.task('fonts', function () {
       prependUnicode: true,
       formats: ['eot', 'woff2', 'woff', 'ttf', 'svg']
     }))
-    .pipe(gulp.dest('app/fonts'));
+    .pipe(gulp.dest('.tmp/fonts'));
 });
 
 // Build and watch scripts for local development
@@ -186,6 +194,7 @@ gulp.task('images', ['sprites'], function () {
 gulp.task('extras', function () {
   return gulp.src([
     'app/**',
+    '.tmp/{images,fonts}/*',
     '!app/{styles,scripts,images}/**',
     '!app/fonts/_*{,/**}',
     '!**/{*.html,.DS_Store}'
