@@ -34,7 +34,7 @@ gulp.task('lint', function () {
 });
 
 // Build stylesheets for local development
-gulp.task('styles:dev', ['sprites', 'fonts'], function () {
+gulp.task('styles:dev', ['sprites', 'iconfonts'], function () {
   return gulp.src('app/styles/**/*.scss')
     .pipe($.sourcemaps.init({loadMaps: true}))
     .pipe($.sass({
@@ -50,7 +50,7 @@ gulp.task('styles:dev', ['sprites', 'fonts'], function () {
 });
 
 // Build stylesheets for production
-gulp.task('styles', ['sprites', 'fonts'], function () {
+gulp.task('styles', ['sprites', 'iconfonts'], function () {
   return gulp.src('app/styles/**/*.scss')
     .pipe($.sass({
       outputStyle: 'expanded',
@@ -85,7 +85,7 @@ gulp.task('sprites', function () {
 });
 
 // Generate icon fonts from SVG files
-gulp.task('fonts', function () {
+gulp.task('iconfonts', function () {
   return gulp.src('app/fonts/_glyphs/*.svg')
     .pipe($.newer('.tmp/styles/glyphs.css'))
     .pipe($.iconfontCss({
@@ -192,13 +192,22 @@ gulp.task('images', ['sprites'], function () {
     .pipe(gulp.dest('dist/images'));
 });
 
+// Copy fonts
+gulp.task('fonts', ['iconfonts'], function () {
+  return gulp.src([
+    'app/fonts/**',
+    '.tmp/fonts/**',
+    '!app/fonts/_*/**'
+  ])
+    .pipe($.ignore.include({isFile: true}))
+    .pipe(gulp.dest('dist/fonts'));
+});
+
 // Copy all extra files like favicon, .htaccess
-gulp.task('extras', ['fonts'], function () {
+gulp.task('extras', function () {
   return gulp.src([
     'app/**',
-    '.tmp/fonts/**',
-    '!app/{styles,scripts,images}/**',
-    '!app/fonts/_*/**',
+    '!app/{styles,scripts,images,fonts}/**',
     '!**/{*.html,.DS_Store}'
   ], {dot: true})
     .pipe($.ignore.include({isFile: true}))
@@ -260,7 +269,7 @@ gulp.task('serve:dist', function () {
 
 // Build production files
 gulp.task('build', function (callback) {
-  runSequence('clean:dist', ['html', 'styles', 'scripts', 'images', 'extras'], 'rev', callback);
+  runSequence('clean:dist', ['html', 'styles', 'scripts', 'images', 'fonts', 'extras'], 'rev', callback);
 });
 
 // Push production files to "gh-pages" branch
