@@ -87,7 +87,7 @@ gulp.task('sprites', function () {
 // Generate icon fonts from SVG files
 gulp.task('iconfonts', function () {
   return gulp.src('app/fonts/_glyphs/*.svg')
-    .pipe($.newer('.tmp/styles/glyphs.css'))
+    .pipe($.newer('.tmp/fonts/glyphs.woff2'))
     .pipe($.iconfontCss({
       fontName: 'glyphs',
       targetPath: '../styles/glyphs.css',   // Relative path from gulp.dest()
@@ -232,7 +232,7 @@ gulp.task('rev', ['filerev'], function () {
 });
 
 // Clean output directories
-gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
+gulp.task('clean', del.bind(null, ['.tmp/{images,fonts}', 'dist']));
 gulp.task('clean:tmp', del.bind(null, '.tmp'));
 
 // Start browsersync development server
