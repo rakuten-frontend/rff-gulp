@@ -232,8 +232,9 @@ gulp.task('rev', ['filerev'], function () {
 });
 
 // Clean output directories
-gulp.task('clean', del.bind(null, ['.tmp/{images,fonts}', 'dist']));
-gulp.task('clean:tmp', del.bind(null, '.tmp'));
+gulp.task('clean', del.bind(null, ['.tmp', 'dist']));
+gulp.task('clean:serve', del.bind(null, '.tmp'));
+gulp.task('clean:build', del.bind(null, ['.tmp/{images,fonts}', 'dist']));
 
 // Start browsersync development server
 gulp.task('serve', ['pre:serve'], function () {
@@ -256,7 +257,7 @@ gulp.task('serve', ['pre:serve'], function () {
 });
 
 gulp.task('pre:serve', function (callback) {
-  runSequence('clean:tmp', ['styles:dev', 'scripts:dev'], callback);
+  runSequence('clean:serve', ['styles:dev', 'scripts:dev'], callback);
 });
 
 // Start local server from the "dist" directory
@@ -269,7 +270,7 @@ gulp.task('serve:dist', function () {
 
 // Build production files
 gulp.task('build', function (callback) {
-  runSequence('clean', ['html', 'styles', 'scripts', 'images', 'fonts', 'extras'], 'rev', callback);
+  runSequence('clean:build', ['html', 'styles', 'scripts', 'images', 'fonts', 'extras'], 'rev', callback);
 });
 
 // Push production files to "gh-pages" branch

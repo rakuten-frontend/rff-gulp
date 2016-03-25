@@ -31,6 +31,38 @@ describe('gulp', function () {
     });
   });
 
+  describe('task "build"', function () {
+    before(function (done) {
+      runSequence('build', function (err) {
+        if (err) {
+          throw err;
+        }
+        done();
+      });
+    });
+
+    it('outputs files into "dist" directory', function () {
+      assert.file([
+        'dist/index.html',
+        'dist/styles',
+        'dist/scripts',
+        'dist/images',
+        'dist/fonts'
+      ]);
+    });
+  });
+
+  describe('task "default"', function () {
+    it('completes without error', function (done) {
+      runSequence('default', function (err) {
+        if (err) {
+          throw err;
+        }
+        done();
+      });
+    });
+  });
+
   describe('task "serve"', function () {
     before(function (done) {
       runSequence('serve', function (err) {
@@ -72,27 +104,6 @@ describe('gulp', function () {
     });
   });
 
-  describe('task "build"', function () {
-    before(function (done) {
-      runSequence('build', function (err) {
-        if (err) {
-          throw err;
-        }
-        done();
-      });
-    });
-
-    it('outputs files into "dist" directory', function () {
-      assert.file([
-        'dist/index.html',
-        'dist/styles',
-        'dist/scripts',
-        'dist/images',
-        'dist/fonts'
-      ]);
-    });
-  });
-
   describe('task "serve:dist"', function () {
     before(function (done) {
       runSequence('serve:dist', function (err) {
@@ -124,17 +135,6 @@ describe('gulp', function () {
           done();
         });
       }
-    });
-  });
-
-  describe('task "default"', function () {
-    it('completes without error', function (done) {
-      runSequence('default', function (err) {
-        if (err) {
-          throw err;
-        }
-        done();
-      });
     });
   });
 });
