@@ -2,6 +2,7 @@
 
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
+var runSequence = require('run-sequence');
 var GitHubApi = require('github4');
 var hostedGitInfo = require('hosted-git-info');
 var pify = require('pify');
@@ -45,7 +46,7 @@ gulp.task('test', ['lint', 'unit-test', 'coveralls']);
 
 gulp.task('clean', del.bind(null, 'dist'));
 
-gulp.task('build', ['test'], function () {
+gulp.task('build', function () {
   var filter = $.filter('templates/README.md', {restore: true});
   return gulp.src([
     'templates/*',
@@ -96,4 +97,6 @@ gulp.task('release', ['build'], function () {
     });
 });
 
-gulp.task('default', ['build']);
+gulp.task('default', ['test'], function (callback) {
+  runSequence('build', callback);
+});

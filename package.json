@@ -10,7 +10,10 @@
   },
   "scripts": {
     "test": "gulp test",
-    "postinstall": "cd templates && npm install"
+    "postinstall": "cd templates && npm install",
+    "preversion": "npm test",
+    "postversion": "git push && git push --tags && gulp release",
+    "gulp": "gulp"
   },
   "devDependencies": {
     "config": "^1.19.0",
