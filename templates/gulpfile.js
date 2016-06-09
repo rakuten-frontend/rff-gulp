@@ -241,7 +241,10 @@ gulp.task('serve', ['pre:serve'], function () {
   bs.init({
     notify: false,
     server: {
-      baseDir: ['.tmp', 'app']
+      baseDir: ['.tmp', 'app'],
+      routes: {
+        '/node_modules': 'node_modules'
+      }
     },
     files: ['app/**/*.html', '.tmp/**']
   });
