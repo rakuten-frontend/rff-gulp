@@ -11,6 +11,9 @@ var path = require('path');
 var runSequence = require('run-sequence');
 var browserify = require('browserify');
 var watchify = require('watchify');
+var scssSyntax = require('postcss-scss');
+var stylelint = require('stylelint');
+var postcssReporter = require('postcss-reporter');
 var autoprefixer = require('autoprefixer');
 var cssnano = require('cssnano');
 var bs = require('browser-sync').create();
@@ -25,8 +28,17 @@ var browsers = [
 ];
 var entries = [];
 
+// Lint stylesheets
+gulp.task('stylelint', function () {
+  return gulp.src('app/styles/**/*.scss')
+    .pipe($.postcss([
+      stylelint(),
+      postcssReporter({clearMessages: true})
+    ], {syntax: scssSyntax}));
+});
+
 // Lint JavaScript
-gulp.task('lint', function () {
+gulp.task('eslint', function () {
   return gulp.src('app/scripts/**/*.js')
     .pipe($.eslint())
     .pipe($.eslint.format())
@@ -253,8 +265,8 @@ gulp.task('serve', ['pre:serve'], function () {
       runSequence('scripts:dev');
     }
   });
-  gulp.watch('app/scripts/**/*.js', ['lint']);
-  gulp.watch('app/styles/**/*.scss', ['styles:dev']);
+  gulp.watch('app/scripts/**/*.js', ['eslint']);
+  gulp.watch('app/styles/**/*.scss', ['stylelint', 'styles:dev']);
   gulp.watch('app/images/_sprites/*.png', ['styles:dev']);
   gulp.watch('app/fonts/_glyphs/*.svg', ['styles:dev']);
 });
@@ -270,6 +282,9 @@ gulp.task('serve:dist', function () {
     server: 'dist'
   });
 });
+
+// Run linters
+gulp.task('lint', ['eslint', 'stylelint']);
 
 // Build production files
 gulp.task('build', function (callback) {
