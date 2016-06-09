@@ -40,10 +40,10 @@ When you save a source code, it will be compiled and reload browser automaticall
   [Cntl + C] to exit.
 
 - **`npm test`**  
-  Run linter.
+  Run linters.
 
 - **`npm run build`**  
-  Run linter and build app for production.
+  Run linters and build app for production.
 
 - **`npm run serve:dist`**  
   Start server with production files.
