@@ -45,6 +45,9 @@ gulp.task('eslint', function () {
     .pipe($.eslint.failAfterError());
 });
 
+// Run linters
+gulp.task('lint', ['eslint', 'stylelint']);
+
 // Build stylesheets for local development
 gulp.task('styles:dev', ['sprites', 'iconfonts'], function () {
   return gulp.src('app/styles/**/*.scss')
@@ -282,9 +285,6 @@ gulp.task('serve:dist', function () {
     server: 'dist'
   });
 });
-
-// Run linters
-gulp.task('lint', ['eslint', 'stylelint']);
 
 // Build production files
 gulp.task('build', function (callback) {
