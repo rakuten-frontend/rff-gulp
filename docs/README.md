@@ -1,5 +1,8 @@
 # Help
 
+## Introduction
+- [Compare with generator-rff](help/compare-rff.md)
+
 ## Tips
 - [Create Sass partial modules](help/sass-modules.md)
 - [Create JavaScript modules](help/js-modules.md)
