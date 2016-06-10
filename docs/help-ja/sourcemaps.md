@@ -1,12 +1,12 @@
-# Output sourcemap for production files
+# 本番ファイル用のソースマップを出力する
 
-Sourcemap is helpful to debug compiled or minified source code.  
-By default, this framework outputs sourcemaps for development, but it doesn't for production.
+ソースマップはコンパイルや最小化されたソースコードをデバッグするのに役立ちます。  
+デフォルトでは、このフレームワークは開発中のソースマップは出力しますが、本番用には出力しません。
 
-If you want to debug production CSS/JavaScript, modify tasks to generate sourcemaps to "dist" folder.
+本番用のCSS/JavaScriptをデバッグしたい場合は、"dist"フォルダにソースマップを生成するようタスクを編集します。
 
 ## CSS
-In the `styles` task, add `$.sourcemaps()` pipes.
+`styles`タスクに、`$.sourcemaps()`パイプを追加します。
 
 ```diff
 gulp.task('styles', ['sprites', 'fonts'], function () {
@@ -26,7 +26,7 @@ gulp.task('styles', ['sprites', 'fonts'], function () {
 ```
 
 ## JavaScript
-In the `scripts` task, pass `{debug: true}` to browserify and add `$.sourcemaps()` pipes.
+`scripts`タスクにて、`{debug: true}`オプションをbrowserifyに渡し、`$.sourcemaps()`パイプを追加します。
 
 ```diff
 gulp.task('scripts', function () {

@@ -27,6 +27,8 @@ $(function () {
 });
 ```
 
+Browserify compiles JavaScript resolving file dependencies and global objects.
+
 - You don't need to insert `<script src="path/to/jquery.js"></script>` to HTML.
 - You don't need to take care of the global `$` object.
 
