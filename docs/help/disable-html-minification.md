@@ -15,6 +15,6 @@ gulp.task('html', function () {
 **Optional:**  
 If you want to remove this feature permanently, uninstall `gulp-htmlmin` from your project.
 
-```sh
+```
 $ npm uninstall gulp-htmlmin --save-dev
 ```

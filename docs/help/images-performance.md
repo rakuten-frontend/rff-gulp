@@ -4,7 +4,7 @@ When you have many images, image optimization task would be slow.
 [gulp-cache](https://github.com/jgable/gulp-cache) can accelerate the task using temp file caching.
 The task will be much faster from the second time.
 
-```sh
+```
 $ npm install gulp-cache --save-dev
 ```
 

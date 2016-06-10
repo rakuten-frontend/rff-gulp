@@ -5,7 +5,7 @@ This feature is usually good in terms of performance, but sometimes you might ge
 
 You can easily regenerate sprites or fonts by **updating timestamp** with `touch` command.
 
-```sh
+```
 $ touch app/images/_sprites/your-new-icon.png
 # Regenerate sprites and css
 
@@ -35,6 +35,6 @@ gulp.task('fonts', function () {
 });
 ```
 
-```sh
+```
 $ npm uninstall gulp-newer --save-dev
 ```

@@ -3,9 +3,9 @@
 This framework uses [npm](https://www.npmjs.com/) for package management.  
 You can easily install frontend libraries using npm, and JS libraries can be bundled by Browserify.
 
-**Example:** How to use jQuery in the project
+**Example:** Use jQuery in the project
 
-```sh
+```
 $ npm install jquery --save
 ```
 

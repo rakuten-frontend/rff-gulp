@@ -22,7 +22,7 @@ If you want to remove this feature permanently, remove `rev` and `filerev` task,
 - });
 ```
 
-```sh
+```
 $ npm uninstall gulp-rev gulp-rev-replace --save-dev
 ```
 

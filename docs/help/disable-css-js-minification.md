@@ -30,7 +30,7 @@ If you want to remove this feature permanently, uninstall `cssnano` from your pr
 - var cssnano = require('cssnano');
 ```
 
-```sh
+```
 $ npm uninstall cssnano --save-dev
 ```
 
@@ -56,7 +56,7 @@ gulp.task('scripts', function () {
 **Optional:**  
 If you want to remove this feature permanently, uninstall `gulp-uglify` from your project.
 
-```sh
+```
 $ npm uninstall gulp-uglify --save-dev
 ```
 
