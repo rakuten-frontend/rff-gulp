@@ -6,6 +6,7 @@
 ## Tips
 - [Create Sass partial modules](help/sass-modules.md)
 - [Create JavaScript modules](help/js-modules.md)
+- [Use CSS/Sass libraries](help/css-libraries.md)
 - [Use JavaScript libraries](help/js-libraries.md)
 - [Include JavaScript without Browserify](help/js-without-browserify.md)
 - [Output sourcemap for production files](help/sourcemaps.md)
