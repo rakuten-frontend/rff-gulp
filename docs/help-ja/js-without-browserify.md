@@ -3,7 +3,7 @@
 Browserifyを全てのJSファイルに適用することを推奨します。  
 ただ、どうしてもBrowserifyを使わずに直接JavaScriptを読み込みたいケースもあるかもしれません。
 
-その場合は、`app/scripts`ディレクトリの外に（例: `app/vendor/*.js`）スクリプトファイルを設置してください。
+その場合は、`app/scripts`ディレクトリの外にスクリプトファイルを設置してください。（例: `app/vendor/*.js`）
 
 ```
 scripts/main.js

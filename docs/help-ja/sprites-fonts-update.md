@@ -5,7 +5,7 @@ CSSスプライトやアイコンフォントのジェネレータは、PGN/SVG�
 
 `touch`コマンドで**タイムスタンプを更新**すれば、簡単にスプライトやフォントを再生成できます。
 
-```
+```sh
 $ touch app/images/_sprites/your-new-icon.png
 # Regenerate sprites and css
 
