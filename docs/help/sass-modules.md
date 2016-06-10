@@ -20,3 +20,6 @@ styles/components/_one-more-partial.scss
 styles/main.css
 styles/components/core.css
 ```
+
+## See also
+- [Use CSS/Sass libraries](css-libraries.md)
