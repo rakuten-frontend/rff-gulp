@@ -34,5 +34,6 @@ Browserifyは自動的にファイルの依存関係やグローバルオブジ�
 - グローバルの`$`オブジェクトに気を使う必要はありません。
 
 ## 関連項目
+- [jQueryプラグインを使用する](jquery-plugins.md)
 - [JavaScriptモジュールを作成する](js-modules.md)
 - [Browserifyを使わずにJavaScriptを読み込む](js-without-browserify.md)

@@ -11,6 +11,7 @@
 - [JavaScriptモジュールを作成する](help-ja/js-modules.md)
 - [CSS/Sassライブラリを使用する](help-ja/css-libraries.md)
 - [JavaScriptライブラリを使用する](help-ja/js-libraries.md)
+- [jQueryプラグインを使用する](help-ja/jquery-plugins.md)
 - [Browserifyを使わずにJavaScriptを読み込む](help-ja/js-without-browserify.md)
 - [本番ファイル用のソースマップを出力する](help-ja/sourcemaps.md)
 

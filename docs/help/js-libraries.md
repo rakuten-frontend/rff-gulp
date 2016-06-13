@@ -33,5 +33,6 @@ Browserify compiles JavaScript resolving file dependencies and global objects.
 - You don't need to take care of the global `$` object.
 
 ## See also
+- [Use jQuery plugins](jquery-plugins.md)
 - [Create JavaScript modules](js-modules.md)
 - [Include JavaScript without Browserify](js-without-browserify.md)

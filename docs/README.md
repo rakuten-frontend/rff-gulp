@@ -11,6 +11,7 @@ English / [日本語](README-ja.md)
 - [Create JavaScript modules](help/js-modules.md)
 - [Use CSS/Sass libraries](help/css-libraries.md)
 - [Use JavaScript libraries](help/js-libraries.md)
+- [Use jQuery plugins](help/jquery-plugins.md)
 - [Include JavaScript without Browserify](help/js-without-browserify.md)
 - [Output sourcemap for production files](help/sourcemaps.md)
 
