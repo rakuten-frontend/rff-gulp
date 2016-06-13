@@ -4,6 +4,7 @@ English / [日本語](README-ja.md)
 
 ## Introduction
 - [Compare with generator-rff](help/compare-rff.md)
+- [Getting started](help/getting-started.md)
 
 ## Tips
 - [Create Sass partial modules](help/sass-modules.md)
