@@ -14,6 +14,7 @@ English / [日本語](README-ja.md)
 - [Use jQuery plugins](help/jquery-plugins.md)
 - [Include JavaScript without Browserify](help/js-without-browserify.md)
 - [Output sourcemap for production files](help/sourcemaps.md)
+- [Create deployment branch](help/deploy-branch.md)
 
 ## Disabling features
 - [Disable HTML minification](help/disable-html-minification.md)

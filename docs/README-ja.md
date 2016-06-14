@@ -14,6 +14,7 @@
 - [jQueryプラグインを使用する](help-ja/jquery-plugins.md)
 - [Browserifyを使わずにJavaScriptを読み込む](help-ja/js-without-browserify.md)
 - [本番ファイル用のソースマップを出力する](help-ja/sourcemaps.md)
+- [デプロイ用ブランチを作成する](help-ja/deploy-branch.md)
 
 ## 機能の無効化
 - [HTMLの最小化を無効にする](help-ja/disable-html-minification.md)
