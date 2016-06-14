@@ -32,7 +32,7 @@ $ mkdir my-gulp-project && cd my-gulp-project
 Yeomanジェネレータを実行し、rff-gulpを使ったプロジェクトを作成します。
 ```sh
 $ yo rff-gulp
-# This will generate files and install node_modules.
+# プロジェクトファイルが生成され、node_modulesがインストールされる
 ```
 
 **Tip:**  
