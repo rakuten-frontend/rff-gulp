@@ -13,7 +13,7 @@ $ npm run deploy
 ```
 
 デフォルトでは、デプロイ用ブランチは**"gh-pages"**です。
-[GitHub Pages](https://pages.github.com/)に配信するときに使われる名前です。
+[GitHub Pages](https://pages.github.com/)の配信で使われている名前です。
 
 ## ブランチ名を変更する
 もしブランチ名を変更したい場合は、`deploy`タスク内の`$.ghPages()`にオプションを追加します。
