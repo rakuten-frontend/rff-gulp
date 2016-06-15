@@ -42,5 +42,20 @@ generator-rff-gulpは自動的にGitHub上の最新版テンプレートを取�
 - **[最新リリース](https://github.com/rakuten-frontend/rff-gulp/releases/latest)**
 - [全てのバージョン](https://github.com/rakuten-frontend/rff-gulp/releases)
 
-## 開発を始める
-生成したプロジェクトにあるREADME.mdを参照してください。
+### 構成
+```
+my-gulp-project/
+├── app/                 : Webアプリケーションのソースコード・ファイル
+│   ├── styles/          : スタイルシート
+│   ├── scripts/         : JavaScript
+│   ├── images/          : 画像
+│   │   └── _sprites/    : スプライト用の元画像
+│   ├── fonts/           : Webフォント
+│   │   └── _glyphs/     : アイコンフォント用の元SVG画像
+│   └── index.html       : インデックスページ
+├── gulpfile.js          : ビルド設定
+└── package.json         : パッケージ情報
+```
+
+## 次のステップ
+開発を始めるには、[ワークフロー](workflow.md)を参照してください。

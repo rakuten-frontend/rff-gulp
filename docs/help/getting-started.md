@@ -42,5 +42,20 @@ If you want to download the template manually, get it from the Releases page.
 - **[Latest release](https://github.com/rakuten-frontend/rff-gulp/releases/latest)**
 - [All versions](https://github.com/rakuten-frontend/rff-gulp/releases)
 
-## Start development
-See the README.md in your generated project.
+### Structure
+```
+my-gulp-project/
+├── app/                 : Source code/files for web application
+│   ├── styles/          : Stylesheets
+│   ├── scripts/         : JavaScripts
+│   ├── images/          : Images
+│   │   └── _sprites/    : Base images for spritesheet
+│   ├── fonts/           : Web fonts
+│   │   └── _glyphs/     : Base SVG files for icon font
+│   └── index.html       : Index page
+├── gulpfile.js          : Build config
+└── package.json         : Package information
+```
+
+## Next step
+See [Workflow](workflow.md) to start development.

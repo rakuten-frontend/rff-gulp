@@ -5,6 +5,7 @@
 ## はじめに
 - [generator-rffとの比較](help-ja/compare-rff.md)
 - [スタートガイド](help-ja/getting-started.md)
+- [ワークフロー](help-ja/workflow.md)
 
 ## Tips
 - [Sassパーシャルモジュールを作成する](help-ja/sass-modules.md)

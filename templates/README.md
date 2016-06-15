@@ -21,7 +21,7 @@ When you save a source code, it will be compiled and reload browser automaticall
 ## Structure
 ```
 [project]/
-├── app/                 : Application source files
+├── app/                 : Source code/files for web application
 │   ├── styles/          : Stylesheets
 │   ├── scripts/         : JavaScripts
 │   ├── images/          : Images
