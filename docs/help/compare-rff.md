@@ -39,3 +39,6 @@ Additionally, some of components are replaced with more reliable modules.
 | **Asset revisioning**     | ✓          | ✓                      | ✓                       |
 | **Git deployment**        | ✓          | -                       | ✓                       |
 | **FTP deployment**        | -           | -                       | ✓                       |
+
+## See also
+- [Features](features.md)

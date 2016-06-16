@@ -3,9 +3,10 @@
 # ヘルプ
 
 ## はじめに
-- [generator-rffとの比較](help-ja/compare-rff.md)
 - [スタートガイド](help-ja/getting-started.md)
 - [ワークフロー](help-ja/workflow.md)
+- [機能一覧](help-ja/features.md)
+- [generator-rffとの比較](help-ja/compare-rff.md)
 
 ## Tips
 - [Sassパーシャルモジュールを作成する](help-ja/sass-modules.md)

@@ -21,7 +21,7 @@
   - Image optimization
   - Static asset revisioning
 - **Automation**
-  - CSS Sprites generator
+  - CSS sprites generator
   - Icon fonts generator
   - Deployment to Git repository
 - **Development server**
