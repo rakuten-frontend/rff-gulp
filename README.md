@@ -17,13 +17,13 @@
   - [ESLint](http://eslint.org/)
   - [Browserify](http://browserify.org/)
 - **Web performance**
-  - HTML/CSS/JS minification
-  - Image optimization
-  - Static asset revisioning
+  - [HTML](https://github.com/kangax/html-minifier)/[CSS](http://cssnano.co/)/[JS](http://lisperator.net/uglifyjs/) minification
+  - [Image optimization](https://github.com/imagemin/imagemin)
+  - [Static asset revisioning](https://github.com/sindresorhus/gulp-rev)
 - **Automation**
-  - CSS sprites generator
-  - Icon fonts generator
-  - Deployment to Git repository
+  - [CSS sprites generator](https://github.com/twolfson/gulp.spritesmith)
+  - [Icon fonts generator](https://github.com/nfroidure/gulp-iconfont)
+  - [Deployment to Git repository](https://github.com/shinnn/gulp-gh-pages)
 - **Development server**
   - [Browsersync](https://www.browsersync.io/)
 
