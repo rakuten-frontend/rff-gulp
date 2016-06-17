@@ -2,7 +2,7 @@
 
 **rff-gulp**は、[generator-rff](https://github.com/rakuten-frontend/generator-rff)（Gruntベースのプロジェクト作成キット）の後継として開発されました。
 
-## 概観
+## 概要
 rff-gulpは開発者にとって使いやすいように設計されています。
 より新しく、安定していて、速く、そしてシンプルです。
 
