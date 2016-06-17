@@ -11,7 +11,7 @@ This means rff-gulp is modern, stable, fast and simple.
 | **Requirements**        | Node.js   | Node.js + Git + Bower |
 | **Build system**        | gulp      | Grunt                 |
 | **Build speed**         | faster    | slower                |
-| **Build config script** | 304 lines | over 600 lines        |
+| **Build config script** | 300 lines | over 600 lines        |
 
 ## Features
 rff-gulp has almost equivalent features to generator-rff default preset.
