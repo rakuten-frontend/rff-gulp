@@ -25,7 +25,7 @@ rff-gulpはgenerator-rffの標準プリセットとほぼ同等の機能を持�
 | **パッケージ管理**           | npm         | Bower                   | Bower                    |
 | **モジュールバンドラ**       | Browserify  | wiredep + grunt-usemin  | wiredep + grunt-usemin   |
 | **HTMLの検証**               | -           | -                       | The Nu Html Checker      |
-| **CSSの検証**                | Stylelint   | CSS Lint                | CSS Lint                 |
+| **CSSの検証**                | stylelint   | CSS Lint                | CSS Lint                 |
 | **JSの検証**                 | ESLint      | JSHint + JSCS           | JSHint + JSCS            |
 | **ユニットテスト**           | -           | -                       | Mocha, Jasmine           |
 | **開発サーバ**               | Browsersync | Browsersync             | Browsersync + SSI        |

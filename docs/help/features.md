@@ -14,8 +14,8 @@ Sass was originally written in Ruby, however you don't need to install Ruby beca
 - [Sass basics](http://sass-lang.com/guide)
 - [Sass documentation](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
 
-### Stylelint
-**[Stylelint](http://stylelint.io/)** is a modern CSS linter that helps you enforce consistent conventions and avoid errors in your stylesheets.  
+### stylelint
+**[stylelint](http://stylelint.io/)** is a modern CSS linter that helps you enforce consistent conventions and avoid errors in your stylesheets.  
 Stylelint supports "shareable config" and rff-gulp adopts **[stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard)** as the default rules.
 
 - [Stylelint rules](http://stylelint.io/user-guide/rules/)

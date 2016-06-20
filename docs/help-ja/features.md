@@ -14,8 +14,8 @@
 - [Sassの基礎](http://sass-lang.com/guide)
 - [Sassドキュメント](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
 
-### Stylelint
-**[Stylelint](http://stylelint.io/)**は、記述の一貫性を保ちスタイルのエラーを防ぐための、モダンなCSS用リントです。  
+### stylelint
+**[stylelint](http://stylelint.io/)**は、記述の一貫性を保ちスタイルのエラーを防ぐための、モダンなCSS用リントです。  
 Stylelintにはシェアラブル・コンフィグという機能があり、rff-gulpでは**[stylelint-config-standard](https://github.com/stylelint/stylelint-config-standard)**をデフォルトのルールとして採用しています。
 
 - [Stylelintのルール一覧](http://stylelint.io/user-guide/rules/)

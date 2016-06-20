@@ -11,7 +11,7 @@
 ## Features
 - **Stylesheet**
   - [Sass](http://sass-lang.com/)
-  - [Stylelint](http://stylelint.io/)
+  - [stylelint](http://stylelint.io/)
   - [Autoprefixer](https://github.com/postcss/autoprefixer)
 - **JavaScript**
   - [ESLint](http://eslint.org/)

@@ -25,7 +25,7 @@ Additionally, some of components are replaced with more reliable modules.
 | **Package manager**       | npm         | Bower                   | Bower                    |
 | **Module bundler**        | Browserify  | wiredep + grunt-usemin  | wiredep + grunt-usemin   |
 | **HTML checker**          | -           | -                       | The Nu Html Checker      |
-| **CSS checker**           | Stylelint   | CSS Lint                | CSS Lint                 |
+| **CSS checker**           | stylelint   | CSS Lint                | CSS Lint                 |
 | **JS checker**            | ESLint      | JSHint + JSCS           | JSHint + JSCS            |
 | **Unit testing**          | -           | -                       | Mocha, Jasmine           |
 | **Dev server**            | Browsersync | Browsersync             | Browsersync + SSI        |
