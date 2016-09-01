@@ -59,4 +59,4 @@ Licensed under the [MIT License](LICENSE).
 [coveralls-image]: https://coveralls.io/repos/rakuten-frontend/rff-gulp/badge.svg?branch=master
 [coveralls-url]: https://coveralls.io/r/rakuten-frontend/rff-gulp
 [david-dev-image]: https://david-dm.org/rakuten-frontend/rff-gulp/dev-status.svg?path=templates
-[david-dev-url]: https://david-dm.org/rakuten-frontend/rff-gulp?path=templates#info=devDependencies
+[david-dev-url]: https://david-dm.org/rakuten-frontend/rff-gulp?path=templates&type=dev
