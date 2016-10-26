@@ -1,3 +1,5 @@
+[English](../help/jquery-plugins.md) / 日本語
+
 # jQueryプラグインを使用する
 
 ほとんどのjQueryプラグインはグローバルの`jQuery`オブジェクトを参照しています。

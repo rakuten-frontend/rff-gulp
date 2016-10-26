@@ -1,3 +1,5 @@
+[English](../help/js-modules.md) / 日本語
+
 # JavaScriptモジュールを作成する
 
 このフレームワークでは[Browserify](http://browserify.org/)をモジュールバンドラとして使っています。  

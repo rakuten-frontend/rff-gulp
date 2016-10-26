@@ -1,3 +1,5 @@
+[English](../help/getting-started.md) / 日本語
+
 # スタートガイド
 
 ## 必要な環境を準備する

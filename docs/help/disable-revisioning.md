@@ -1,3 +1,5 @@
+English / [日本語](../help-ja/disable-revisioning.md)
+
 # Disable asset revisioning
 
 Remove `rev` from the `build` task.

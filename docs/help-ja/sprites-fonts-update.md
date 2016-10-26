@@ -1,3 +1,5 @@
+[English](../help/sprites-fonts-update.md) / 日本語
+
 # CSSスプライトやフォントが更新されない
 
 CSSスプライトやアイコンフォントのジェネレータは、PGN/SVGファイルが追加・更新されたときのみ実行されます。  

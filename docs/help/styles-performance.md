@@ -1,3 +1,5 @@
+English / [日本語](../help-ja/styles-performance.md)
+
 # Task "styles" is too slow
 
 When you have huge stylesheets, CSS minification would be slow, especially [postcss-discard-duplicates](https://github.com/ben-eb/postcss-discard-duplicates) plugin has large performance hit.  

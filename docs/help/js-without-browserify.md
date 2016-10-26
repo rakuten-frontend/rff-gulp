@@ -1,3 +1,5 @@
+English / [日本語](../help-ja/js-without-browserify.md)
+
 # Include JavaScript without Browserify
 
 We recommend to use Browserify for all JS files.  

@@ -1,3 +1,5 @@
+[English](../help/js-libraries.md) / 日本語
+
 # JavaScriptライブラリを使用する
 
 このフレームワークではパッケージ管理に[npm](https://www.npmjs.com/)を使っています。  

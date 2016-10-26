@@ -1,3 +1,5 @@
+English / [日本語](../help-ja/jquery-plugins.md)
+
 # Use jQuery plugins
 
 Most jQuery plugins refer `jQuery` object in the global.

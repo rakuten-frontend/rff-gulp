@@ -42,7 +42,7 @@ $ yo rff-gulp
 - [All versions](https://github.com/rakuten-frontend/rff-gulp/releases)
 
 ## Documentation
-See [rff-gulp documents](docs/README.md).
+rff-gulp help: [English](docs/README.md) / [日本語](docs/README-ja.md)
 
 ## License
 Copyright (c) 2016 Rakuten, Inc.

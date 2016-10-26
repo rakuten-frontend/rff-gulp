@@ -1,3 +1,5 @@
+English / [日本語](../help-ja/sprites-fonts-update.md)
+
 # Sprites/fonts can't be updated
 
 CSS sprites generator and icon fonts generator runs only when PNG/SVG file is newly added or updated.  

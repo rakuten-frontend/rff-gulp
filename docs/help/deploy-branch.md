@@ -1,3 +1,5 @@
+English / [日本語](../help-ja/deploy-branch.md)
+
 # Create deployment branch
 
 Production files created in the "dist" directory are not tracked by Git to prevent unnecessary histories/conflicts.  

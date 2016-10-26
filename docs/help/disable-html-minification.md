@@ -1,3 +1,5 @@
+English / [日本語](../help-ja/disable-html-minification.md)
+
 # Disable HTML minification
 
 Remove `$.htmlmin()` pipe from the `html` task.

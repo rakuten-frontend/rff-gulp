@@ -1,3 +1,5 @@
+[English](../help/sass-modules.md) / 日本語
+
 # Sassパーシャルモジュールを作成する
 
 [Sass公式ガイド](http://sass-lang.com/guide#topic-4)にあるように、`_`プリフィックス付きのSassファイルはパーシャルモジュールとして扱われます。  

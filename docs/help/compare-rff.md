@@ -1,3 +1,5 @@
+English / [日本語](../help-ja/compare-rff.md)
+
 # Compare with generator-rff
 
 **rff-gulp** is developed as a successor of [generator-rff](https://github.com/rakuten-frontend/generator-rff) which is Grunt-based project starter kit.

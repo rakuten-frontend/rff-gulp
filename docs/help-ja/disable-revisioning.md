@@ -1,3 +1,5 @@
+[English](../help/disable-revisioning.md) / 日本語
+
 # アセットへのリビジョン付加を無効にする
 
 `build`タスクから`rev`を削除します。

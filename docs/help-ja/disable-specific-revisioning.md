@@ -1,3 +1,5 @@
+[English](../help/disable-specific-revisioning.md) / 日本語
+
 # 特定のファイルだけリビジョン付加を無効にする
 
 リビジョン付加の対象を指定することができます。

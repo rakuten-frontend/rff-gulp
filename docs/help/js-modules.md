@@ -1,3 +1,5 @@
+English / [日本語](../help-ja/js-modules.md)
+
 # Create JavaScript modules
 
 This framework uses [Browserify](http://browserify.org/) as module bundler.  

@@ -1,3 +1,5 @@
+[English](../help/workflow.md) / 日本語
+
 # ワークフロー
 
 ビルドシステムとフロントエンド開発で使うモジュールは、全て[npm](https://www.npmjs.com/)で管理されています。  

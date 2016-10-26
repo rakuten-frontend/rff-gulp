@@ -1,3 +1,5 @@
+[English](../help/disable-html-minification.md) / 日本語
+
 # HTMLの最小化を無効にする
 
 `html`タスクから`$.htmlmin()`パイプを削除します。

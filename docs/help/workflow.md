@@ -1,3 +1,5 @@
+English / [日本語](../help-ja/workflow.md)
+
 # Workflow
 
 All modules for both build system and frontend development are managed by [npm](https://www.npmjs.com/).  

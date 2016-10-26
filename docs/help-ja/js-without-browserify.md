@@ -1,3 +1,5 @@
+[English](../help/js-without-browserify.md) / 日本語
+
 # Browserifyを使わずにJavaScriptを読み込む
 
 Browserifyを全てのJSファイルに適用することを推奨します。  

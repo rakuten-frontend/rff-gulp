@@ -1,3 +1,5 @@
+[English](../help/images-performance.md) / 日本語
+
 # "images"タスクが遅い
 
 画像ファイルが大量にあると、画像の最適化に時間がかかります。  

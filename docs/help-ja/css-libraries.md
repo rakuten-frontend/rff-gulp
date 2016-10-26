@@ -1,3 +1,5 @@
+[English](../help/css-libraries.md) / 日本語
+
 # CSS/Sassライブラリを使用する
 
 このフレームワークではパッケージ管理に[npm](https://www.npmjs.com/)を使っています。

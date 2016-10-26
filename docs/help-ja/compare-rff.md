@@ -1,3 +1,5 @@
+[English](../help/compare-rff.md) / 日本語
+
 # generator-rffとの比較
 
 **rff-gulp**は、[generator-rff](https://github.com/rakuten-frontend/generator-rff)（Gruntベースのプロジェクト作成キット）の後継として開発されました。

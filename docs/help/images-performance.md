@@ -1,3 +1,5 @@
+English / [日本語](../help-ja/images-performance.md)
+
 # Task "images" is too slow
 
 When you have many images, image optimization task would be slow.  

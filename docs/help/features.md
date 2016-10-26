@@ -1,3 +1,5 @@
+English / [日本語](../help-ja/features.md)
+
 # Features
 
 [Stylesheet](#stylesheet) |

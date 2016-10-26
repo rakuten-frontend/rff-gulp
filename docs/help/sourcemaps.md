@@ -1,3 +1,5 @@
+English / [日本語](../help-ja/sourcemaps.md)
+
 # Output sourcemap for production files
 
 Sourcemap is helpful to debug compiled or minified source code.  

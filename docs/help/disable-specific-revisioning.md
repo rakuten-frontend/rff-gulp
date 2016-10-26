@@ -1,3 +1,5 @@
+English / [日本語](../help-ja/disable-specific-revisioning.md)
+
 # Disable asset revisioning to specific files
 
 You can specify the target of revisioning.

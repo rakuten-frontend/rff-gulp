@@ -1,3 +1,5 @@
+English / [日本語](../help-ja/sass-modules.md)
+
 # Create Sass partial modules
 
 According to the [Sass official guide](http://sass-lang.com/guide#topic-4), Sass file prefixed with `_` is handled as a partial module.  

@@ -1,3 +1,5 @@
+[English](../help/styles-performance.md) / 日本語
+
 # "styles"タスクが遅い
 
 スタイルシートがあまりに大きいと、CSSの最小化に時間がかかります。

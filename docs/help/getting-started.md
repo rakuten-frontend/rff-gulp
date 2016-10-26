@@ -1,3 +1,5 @@
+English / [日本語](../help-ja/getting-started.md)
+
 # Getting started
 
 ## Install prerequisites

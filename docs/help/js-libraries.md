@@ -1,3 +1,5 @@
+English / [日本語](../help-ja/js-libraries.md)
+
 # Use JavaScript libraries
 
 This framework uses [npm](https://www.npmjs.com/) for package management.  

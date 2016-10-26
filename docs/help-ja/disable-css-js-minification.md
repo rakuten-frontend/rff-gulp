@@ -1,3 +1,5 @@
+[English](../help/disable-css-js-minification.md) / 日本語
+
 # CSS/JSの最小化を無効にする
 
 **注意:**  
