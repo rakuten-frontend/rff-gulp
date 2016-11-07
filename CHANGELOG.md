@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.1.0 (2016-11-07)
+- Support Node.js v7.
+- Update ESLint and stylelint.
+- Update gulp plugins.
+
 ## v1.0.0 (2016-06-20)
 - **Breaking changes**
   - Revise support environment.
