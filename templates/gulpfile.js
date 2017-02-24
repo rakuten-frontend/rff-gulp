@@ -33,7 +33,7 @@ gulp.task('stylelint', function () {
   return gulp.src('app/styles/**/*.scss')
     .pipe($.postcss([
       stylelint(),
-      postcssReporter({clearMessages: true})
+      postcssReporter({clearReportedMessages: true})
     ], {syntax: scssSyntax}));
 });
 
