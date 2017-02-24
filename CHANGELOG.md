@@ -1,5 +1,9 @@
 # Changelog
 
+## v1.2.0 (2017-02-24)
+- Update stylelint and gulpfile.js.
+- Update gulp-sass.
+
 ## v1.1.0 (2016-11-07)
 - Support Node.js v7.
 - Update ESLint and stylelint.
