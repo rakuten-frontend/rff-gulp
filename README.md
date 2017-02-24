@@ -45,7 +45,7 @@ $ yo rff-gulp
 rff-gulp help: [English](docs/README.md) / [日本語](docs/README-ja.md)
 
 ## License
-Copyright (c) 2016 Rakuten, Inc.
+Copyright (c) 2016-2017 Rakuten, Inc.
 Licensed under the [MIT License](LICENSE).
 
 [release-image]: https://img.shields.io/github/release/rakuten-frontend/rff-gulp.svg
