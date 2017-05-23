@@ -261,7 +261,7 @@ gulp.task('serve', ['pre:serve'], function () {
         '/node_modules': 'node_modules'
       }
     },
-    files: ['app/**/*.html', '.tmp/**']
+    files: ['app/**/*.html', '.tmp/**', '!.tmp/**/*.map']
   });
   gulp.watch('app/scripts/*.js', function (event) {
     if (event.type === 'added' || event.type === 'renamed') {
