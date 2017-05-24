@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.2.1 (2017-05-24)
+- Prevent unnecessary refresh by using CSS injection on Browsersync. ([#2](https://github.com/rakuten-frontend/rff-gulp/pull/2))
+
 ## v1.2.0 (2017-02-24)
 - Update stylelint and gulpfile.js.
 - Update gulp-sass.
